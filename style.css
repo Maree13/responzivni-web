@@ -119,6 +119,7 @@ h1 {
 /* MOBILE VERSION */
 .aboutus-section {
   width: 90%;
+  margin-bottom: 80px;
 }
 
 .aboutus-image {
@@ -158,5 +159,59 @@ h1 {
 
   h2 {
     margin-top: 0;
+  }
+}
+
+
+/* WHAT WE DO SECTION */
+
+/* MOBILE */
+
+.whatwedo-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--background-01);
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.whatwedo-text {
+  color: var(--navigation-color);
+  padding: 40px 5%;
+  width: 90%;
+  text-align: center;
+}
+
+.icon-container_whatwedo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--navigation-color);
+  margin-bottom: 30px;
+}
+
+.icon-whatwedo {
+  width: 50px;
+  padding-bottom: 10px;
+}
+
+/* span {
+  display: block;
+} */
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+  .icon-container_whatwedo {
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
   }
 }
