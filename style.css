@@ -35,6 +35,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   padding: 15px;
+  width: 100%;
 }
 
 /* HAMBURGER MENU */
@@ -69,6 +70,138 @@ nav a {
 @media (min-width: 768px) {
   nav a {
     display: inline-block;
-    margin: 20px;
   }
 }
+
+
+/* HERO-ABOUTUS SECTION */
+
+
+.hero-aboutus_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  background-image: url(images/hero.jpg);
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+h1 {
+  color: var(--navigation-color);
+  position: absolute;
+  bottom: 30px;
+  right: 5%;
+  max-width: 200px;
+  text-align: right;
+  font-size: 47px;
+  /* margin-left: auto; */
+}
+
+@media (min-width: 768px) {
+  h1 {
+    right: 20%;
+    font-size: 54px;
+    max-width: 250px;
+  }
+}
+
+
+/* ABOUT-US SECTION */
+
+/* MOBILE */
+.aboutus-section {
+  width: 90%;
+}
+
+
+/* .aboutus-text_wrapper {
+  width: 100%;
+}
+
+.aboutus-image_wrapper {
+  width: 100%;
+} */
+
+.aboutus-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* h2 {
+  margin-top: 0;
+} */
+
+/* DESKTOP VERSION */
+
+@media (min-width: 768px) {
+  .aboutus-section {
+    width: 90%;
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    align-items: start;
+  }
+
+  .aboutus-text_wrapper {
+    flex-basis: 50%;
+    margin-left: 15%;
+  }
+
+  .aboutus-image_wrapper {
+    flex-basis: 50%;
+    display: flex;
+    height: auto;
+    margin-right: 15%;
+  }
+
+  .aboutus-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+
+
+/* .aboutus-section {
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+  gap: 40px;
+}
+
+.aboutus-text_wrapper {
+  flex-basis: 50%;
+  margin-left: 15%;
+}
+
+.aboutus-image_wrapper {
+  flex-basis: 50%;
+  display: flex;
+  height: auto;
+  margin-right: 15%;
+}
+
+.aboutus-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h2 {
+  margin-top: 0;
+} */
