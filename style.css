@@ -351,11 +351,19 @@ button {
   }
 }
 
-/* REVIEW SECTION */
+/* REVIEW SECTION MOBILE */
 
 .review-section {
   width: 90%;
   margin: 0 auto;
+}
+
+.figure-reviews {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .image-reviews_wrapper {
@@ -371,4 +379,51 @@ button {
   height: 100%;
   display: block;
   object-fit: cover;
+}
+
+.reviews-title {
+  text-align: center;
+}
+
+figure span {
+  font-weight: bold;
+}
+
+figure p {
+  padding: 20px 0;
+}
+
+/* REVIEW SECTION DESKTOP */
+@media (min-width: 768px) {
+
+  .review-section {
+    display: grid;
+    grid-template-areas:
+      "text text"
+      "review1 review2";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    width: 60%;
+    padding-top: 40px;
+  }
+
+  .reviews-text_wraper {
+    grid-area: text;
+    /* Priradíme tomuto prvku oblasť 'text' */
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .figure-reviews:nth-child(2) {
+    grid-area: review1;
+    /* Priradíme prvý figure prvok oblasti 'review1' */
+    text-align: center;
+  }
+
+  .figure-reviews:nth-child(3) {
+    grid-area: review2;
+    /* Priradíme druhý figure prvok oblasti 'review2'*/
+    text-align: center;
+  }
 }
