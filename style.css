@@ -320,13 +320,23 @@ figure {
 }
 
 button {
+  display: block;
   padding: 10px 15px;
   text-transform: uppercase;
   font-weight: 700;
   border-radius: 5px;
   border-width: 0;
   cursor: pointer;
-  margin-left: 5%;
   width: 160px;
-  margin-top: 40px;
+  margin: 40px 0;
 }
+
+/* CONTACT US DESKTOP */
+
+@media (min-width: 768px) {
+  .contact-us_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 90%;
+    margin: 0 auto;
+  }
