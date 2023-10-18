@@ -436,3 +436,35 @@ figure p {
     text-align: center;
   }
 }
+
+/* GALLERY 02 - MOBILE */
+
+.gallery02-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  /* display: flex;
+  flex-direction: column; 
+  SKUSALA SOM FLEX-BOX AJ BEZ FLEXBOXU, ALE MALA SOM MEDZI FOTKAMI GAP KTORY SOM NEVEDELA ELIMINOVAT. KUKALA SOM DO VYVOJARSKYCH NASTROJOV A TIEZ SOM NENASLA Z COHO VZNIKA. AZ GRID HO VYELIMINOVAL. */
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.gallery02-image_wrapper {}
+
+.gallery02-image01,
+.gallery02-image02,
+.gallery02-image03,
+.gallery02-image04 {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* GALLERY 02 - DESKTOP  */
+@media (min-width: 768px) {
+
+  .gallery02-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
