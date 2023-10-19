@@ -32,10 +32,13 @@ body {
 /* MENU */
 nav {
   background-color: var(--navigation-background);
-  display: flex;
-  justify-content: space-evenly;
   padding: 15px;
   width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* HAMBURGER MENU */
@@ -59,12 +62,16 @@ nav {
 
 /* DESKTOP NAVIGATION */
 
-nav a {
+li a {
   text-decoration: none;
   padding-top: 16px;
   padding-bottom: 16px;
   color: #fff;
   display: none;
+}
+
+li {
+  list-style: none;
 }
 
 @media (min-width: 768px) {
