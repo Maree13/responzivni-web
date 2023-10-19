@@ -499,4 +499,5 @@ figure p {
 
 .footer span {
   color: var(--navigation-color);
+  text-align: center;
 }
