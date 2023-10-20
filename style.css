@@ -34,11 +34,15 @@ nav {
   background-color: var(--navigation-background);
   padding: 15px;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
   display: flex;
   justify-content: space-evenly;
+  flex-grow: 1;
 }
 
 /* HAMBURGER MENU */
@@ -75,10 +79,12 @@ li {
 }
 
 @media (min-width: 768px) {
+
   nav a {
     display: inline-block;
   }
 }
+
 
 
 /* HERO-ABOUTUS SECTION */
@@ -215,10 +221,6 @@ h1 {
   padding-bottom: 10px;
 }
 
-/* span {
-  display: block;
-} */
-
 figure {
   display: flex;
   flex-direction: column;
@@ -226,12 +228,6 @@ figure {
 }
 
 /* DESKTOP */
-
-/* .whatwedo-section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-} */
 
 @media (min-width: 768px) {
   .icon-container_whatwedo {
